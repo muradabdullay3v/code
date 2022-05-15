@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Visby CF Medium" , sans-serif;
+  font-family: "Roboto" , sans-serif;
 }
 
 .my_container {
@@ -910,7 +910,7 @@ body {
 #comments_partners .category {
   font-family: "Didact Gothic", sans-serif;
   color: #857c7c;
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 #comments_partners #academic-partners {
@@ -1014,6 +1014,10 @@ body {
 }
 
 @media screen and (max-width: 870px) {
+  #comments_partners .title {
+    margin-top: 10px;
+    font-size: 30px;
+  }
   #comments_partners .partners-logo {
     padding: 0;
     -ms-flex-line-pack: distribute;
@@ -1378,6 +1382,7 @@ body {
 @media screen and (max-width: 573px) {
   #form #question-form .sual .sual_summary {
     margin-bottom: 20px;
+    margin-left: 10px;
   }
   #form #question-form .sual .sual_summary p {
     display: none;
@@ -1385,11 +1390,11 @@ body {
   #form #question-form .sual .sual_form {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 80px 80px 80px 80px;
-        grid-template-columns: 80px 80px 80px 80px;
-    -ms-grid-rows: 59px 59px 59px 59px;
-        grid-template-rows: 59px 59px 59px 59px;
-        grid-template-areas: "name name name name" "surname surname surname surname" "prefix prefix  prefix prefix" "prefix number number number" "lesson lesson lesson lesson" "btn btn btn btn";
+    -ms-grid-columns: 360px;
+        grid-template-columns: 360px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "name" "surname" "prefix" "number" "lesson" "btn";
   }
 }
 

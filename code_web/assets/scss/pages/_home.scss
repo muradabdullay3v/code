@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: "Visby CF Medium" , sans-serif;
+    font-family: "Roboto" , sans-serif;
 }
 
 
@@ -845,7 +845,7 @@ body{
 	.category {
 		font-family: $primary-font;
 		color: rgb(133, 124, 124);
-		margin-top: -20px;
+		margin-top: -10px;
 	}
 	// -- fields_of_study end 
 	
@@ -948,6 +948,10 @@ body{
 	}
 	
 	@media screen and(max-width:870px) {
+		.title{
+			margin-top: 10px;
+			font-size: 30px;
+		}
 		.partners-logo {
 			padding: 0;
 			align-content: space-around;
@@ -1249,21 +1253,22 @@ body{
 		  .sual {
 			.sual_summary {
 			  margin-bottom: 20px;
+			  margin-left: 10px;
 			  p {
 				display: none;
 			  }
 			}
 			.sual_form {
 			  display: grid;
-			  grid-template-columns: 80px 80px 80px 80px;
-			  grid-template-rows: 59px 59px 59px 59px;
+			  grid-template-columns: 360px;
+			  grid-template-rows: auto; 
 			  grid-template-areas:
-				"name name name name"
-				"surname surname surname surname"
-				"prefix prefix  prefix prefix"
-				"prefix number number number"
-				"lesson lesson lesson lesson"
-				"btn btn btn btn";
+				"name"
+				"surname"
+				"prefix"
+				"number"
+				"lesson"
+				"btn";
 			}
 		  }
 		}
