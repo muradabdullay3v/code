@@ -1,0 +1,8 @@
+@mixin ImgCover {
+    width: calc(100%);
+    height: calc(100%);
+    position: relative;
+    top: -150px;
+    color: white;
+    display: none;
+}
