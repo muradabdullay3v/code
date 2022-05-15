@@ -594,7 +594,7 @@ body{
             }
 
             .part_text {
-                margin-top: 50px;
+                margin-top:50px;
                 font-size: 21px;
                 font-family: 'Lato', sans-serif;
                 font-weight: 800;
@@ -641,7 +641,7 @@ body{
             }
         }
         
-        @media screen and (min-width:768px)and(max-width: 992px) {
+        @media screen and(max-width: 1200px) {
             .fieldsofeducation {
                 padding: 0px 0px 50px 50px;
                 max-width: 100%;
@@ -694,10 +694,14 @@ body{
     }
 }
 
-#why{	
+#why{
+	.card img{
+		width: 100%;
+		height: 150px;
+		cursor: pointer;
+	}
 	.summary {
-		margin-top: 50px;
-		width: 600px;
+		max-width: 650px;
 		color: $color1;
 		.why {
 		  font-size: $font-size;
@@ -706,12 +710,29 @@ body{
 		.code {
 		  font-size: $font-size;
 		  font-weight: 700;
+		  margin-top: -25px;
 		}
 		p {
+			font-size: 17px;
 			margin-top: 30px;
+			margin-bottom: 100px;
 		}
 	  }
-	  
+	  .card-title{
+		  margin-top: -15px;
+	  }
+	  h5{
+		font-size: 21px;
+		font-weight: bolder;
+		cursor: pointer;	
+	}
+	small{
+		cursor: pointer;
+		font-weight: bolder;
+		font-size: 14px;
+		color: rgb(0, 0, 0);
+	}
+
 	  .ma-style{
 		  flex-flow : row wrap;
 		  justify-content: space-between;
@@ -719,10 +740,6 @@ body{
 	  
 	  .my-style{
 		  border: 0;
-		  img{
-			  width: 100%;
-			  height: 150px;
-		  }
 	  }
 	  
 	  @media screen and (min-width:458px) and (max-width:767px){
@@ -730,6 +747,7 @@ body{
 			  img{
 				  width: 100%;
 				  height: 500px;
+				  display: none;
 			  }
 		  }
 	  }
@@ -741,6 +759,7 @@ body{
 			  }
 		  }
 	  }
+	  padding-bottom: 100px;
 }
 	
 #comments_partners{
@@ -973,6 +992,7 @@ body{
 	  .thetext {
 		margin-bottom: -20px;
 		text-align: center;
+		margin-left: -20px;
 	  }
 	  .verticalLine {
 		width: 130px;
