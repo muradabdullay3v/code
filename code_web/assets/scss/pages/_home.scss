@@ -911,6 +911,7 @@ body{
 		.logo {
 			height: 50px;
 			width: 120px;
+			padding: 35px;
 	
 			img {
 				width: 189.98px;
@@ -1045,6 +1046,10 @@ body{
 		@include ImgCover;
 		background-color: $color-opacity-red;
 	  }
+	  .blue{
+		@include ImgCover;
+		background-color: $color-opacity-blue;
+	  }
 	  .behind-image {
 		width: calc(100%);
 		height: calc(100%);
@@ -1066,14 +1071,14 @@ body{
 		position: absolute;
 		left: 130px;
 		top: 105px;
+		margin-left: -20px;
 	  }
 	 
 	  
 	  .behind-image-item {
-		font-size: 17px;
+		font-size: 14px;
 		margin-bottom: 2px;
 		position: relative;
-		left: -12px;
 		top: 10px;
 		text-align: start;
 		-moz-transform: scale(-1, 1);
@@ -1108,6 +1113,9 @@ body{
 		  }
 	  }
 	  @media only screen and( min-width:770px) and (max-width: 990px) {
+		  .photos{
+			  margin-left: 80px;
+		  }
 		  .photos-item{
 			  
 			  width: calc(100%/4);     
@@ -1118,10 +1126,13 @@ body{
 		  }
 	  }
 	  @media only screen and( min-width:250px) and (max-width: 770px) {
+		  .photos{
+			margin-left: 100px;
 		  .photos-item{
 			  
-			  width: calc(100%/3);   
+			  width: calc(100%/3);  
 		  }
+		}
 		  .icon{
 		   
 			left: 150px;
@@ -1270,6 +1281,9 @@ body{
 				"lesson"
 				"btn";
 			}
+			button{
+				height: 59px;
+			}
 		  }
 		}
 	  }
@@ -1349,8 +1363,7 @@ body{
 		}
 	  }
 	  
-	  #links {
-		.links {
+	  #bottom {
 		  .copyrighttext {
 			position: relative;
 			width: 400px;
@@ -1364,7 +1377,7 @@ body{
 			margin: 46px 100px;
 		  }
 	  
-		  .icon {
+		  .icons {
 			position: relative;
 			width: 185px;
 			display: flex;
@@ -1384,18 +1397,15 @@ body{
 			  }
 			}
 		  }
-		}
 		@media screen and(max-width:1145px) {
 		  .links {
 			margin-left: -220px;
 		  }
 	  
 		  @media screen and(max-width:573px) {
-			.links {
 			  .copyrighttext {
 				display: none;
 			  }
-			}
 		  }
 		}
 	  }
@@ -1454,159 +1464,3 @@ body{
 	  }
 	  
 }
-
-// fields_of_study end
-// .logos{
-// 	margin-top: 50px;
-// 	display: flex;
-// 	justify-content: space-around;
-// 	flex-flow: row wrap;
-// 	align-items: baseline;
-// 	width: 100%;
-// }
-
-// .logos-item{
-// 	width: 189.98px;
-// 	height:127.5px;
-// }
-
-// @media screen and (max-width:1400px) {
-// 	.logos{
-// 		padding: 0 250px;
-// 	}
-// }
-
-// @media screen and (max-width:1270px) {
-// 	.logos{
-// 		padding: 0 200px;
-// 	}
-// }
-
-// @media screen and (max-width:1156px) {
-// 	.logos{
-// 		padding: 0 190px;
-// 	}
-// }
-
-
-// @media screen and (max-width:1110px) {
-// 	.logos{
-// 		padding: 0;
-// 		flex-direction: column;
-// 		align-content: center;
-// 		padding-left: 50px;
-// 	}
-// }
-
-// .sual{
-// 	padding: 100px 50px;
-// 	background-color: #F4F5F8;
-// 	display: flex;
-// 	justify-content: space-around;
-// 	flex-flow: row wrap;
-// 	&_summary{
-// 		width: 550px;
-// 		h2{
-// 			font-size: 50px;
-// 			font-weight: lighter;
-// 		}
-// 		h3{
-// 			font-size: 50px;
-// 			font-weight: bolder;
-// 			margin-top: -15px;
-// 			margin-left: 50px;
-// 		}
-// 		p{
-// 			font-size: 15px;
-// 			margin-top: 35px;
-// 			margin-left: 50px;
-// 		}
-// 	}
-// }
-
-// .sual_form{
-// 	display: grid;
-// 	grid-template-columns: 103.5px 103.5px 103.5px 103.5px;
-// 	grid-template-rows: 59px 59px 59px 59px;
-// 	grid-template-areas: 'name name surname surname'
-// 						 'prefix number number number'
-// 						 'lesson lesson lesson lesson'
-// 						 'btn btn btn btn';
-// 	grid-gap:10px;
-// 	input{
-// 		border: none;
-// 		padding: 15px;
-// 		font-size: 20px;
-// 		&:focus{
-// 			outline: 1px solid rgb(160, 160, 160);
-// 		}
-// 	}
-// 	select{
-// 		border: none;
-// 		padding: 15px;
-// 		font-size: 20px;
-// 		&:focus{
-// 			outline: 1px solid rgb(160, 160, 160);
-// 		}
-// 	}
-// 	.name{
-// 		grid-area: name;
-// 	}
-// 	.surname{
-// 		grid-area: surname;
-// 	}
-// 	.prefix{
-// 		grid-area: prefix;
-// 	}
-// 	.number{
-// 		grid-area: number;
-// 	}
-// 	.lesson{
-// 		grid-area: lesson;
-// 	}
-// 	button{
-// 		grid-area: btn;
-// 		background-color: #FCBA00;
-// 		border: none;
-// 		color: #fff;
-// 		font-size: 21px;
-// 		font-weight: bolder;
-// 		transition: background-color 0.5s;
-// 		&:hover{
-// 			background-color: #cf9800;
-// 		}
-// 	}
-// }
-
-// @media screen and(max-width:1093px) {
-// 	.sual{
-// 		padding: 100px 0;
-// 		.sual_summary{
-// 			margin-bottom: 20px;
-// 			p{
-// 				display: none;
-// 			}
-// 		}
-// 		.sual_form{
-// 			grid-template-columns: auto auto auto auto;
-// 		grid-template-rows: 70px 70px 70px 70px;
-	
-// 		}
-// 	}
-// }
-
-// @media screen and(max-width:573px) {
-// 	.sual{
-// 		.sual_summary{
-// 			margin-bottom: 20px;
-// 			p{
-// 				display: none;
-// 			}
-// 		}
-// 		.sual_form{
-// 			grid-template-columns: 80px 80px 80px 80px;
-// 		grid-template-rows: 59px 59px 59px 59px;
-	
-// 		}
-// 	}
-// }

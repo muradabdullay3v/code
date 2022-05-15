@@ -983,6 +983,7 @@ body {
 #comments_partners .partners-logo .logo {
   height: 50px;
   width: 120px;
+  padding: 35px;
 }
 
 #comments_partners .partners-logo .logo img {
@@ -1114,7 +1115,7 @@ body {
   top: -150px;
   color: white;
   display: none;
-  background-color: rgba(0, 165, 88, 0.8);
+  background-color: rgba(0, 165, 88, 0.616);
 }
 
 #our-graduates .purple {
@@ -1124,7 +1125,7 @@ body {
   top: -150px;
   color: white;
   display: none;
-  background-color: rgba(156, 0, 156, 0.8);
+  background-color: rgba(156, 0, 156, 0.555);
 }
 
 #our-graduates .yellow {
@@ -1134,7 +1135,7 @@ body {
   top: -150px;
   color: white;
   display: none;
-  background-color: rgba(255, 198, 92, 0.8);
+  background-color: rgba(255, 198, 92, 0.63);
 }
 
 #our-graduates .red {
@@ -1144,7 +1145,17 @@ body {
   top: -150px;
   color: white;
   display: none;
-  background-color: rgba(255, 0, 0, 0.8);
+  background-color: rgba(255, 0, 0, 0.623);
+}
+
+#our-graduates .blue {
+  width: calc(100%);
+  height: calc(100%);
+  position: relative;
+  top: -150px;
+  color: white;
+  display: none;
+  background-color: rgba(43, 124, 199, 0.753);
 }
 
 #our-graduates .behind-image {
@@ -1165,13 +1176,13 @@ body {
   position: absolute;
   left: 130px;
   top: 105px;
+  margin-left: -20px;
 }
 
 #our-graduates .behind-image-item {
-  font-size: 17px;
+  font-size: 14px;
   margin-bottom: 2px;
   position: relative;
-  left: -12px;
   top: 10px;
   text-align: start;
   -webkit-transform: scale(-1, 1);
@@ -1201,6 +1212,9 @@ body {
 }
 
 @media only screen and (min-width: 770px) and (max-width: 990px) {
+  #our-graduates .photos {
+    margin-left: 80px;
+  }
   #our-graduates .photos-item {
     width: calc(100%/4);
   }
@@ -1210,7 +1224,10 @@ body {
 }
 
 @media only screen and (min-width: 250px) and (max-width: 770px) {
-  #our-graduates .photos-item {
+  #our-graduates .photos {
+    margin-left: 100px;
+  }
+  #our-graduates .photos .photos-item {
     width: calc(100%/3);
   }
   #our-graduates .icon {
@@ -1396,6 +1413,9 @@ body {
         grid-template-rows: auto;
         grid-template-areas: "name" "surname" "prefix" "number" "lesson" "btn";
   }
+  #form #question-form .sual button {
+    height: 59px;
+  }
 }
 
 #form footer {
@@ -1466,7 +1486,7 @@ body {
   color: black;
 }
 
-#form #links .links .copyrighttext {
+#form #bottom .copyrighttext {
   position: relative;
   width: 400px;
   font-weight: 300;
@@ -1474,12 +1494,12 @@ body {
   color: #8f8f8f;
 }
 
-#form #links .links .logo {
+#form #bottom .logo {
   position: relative;
   margin: 46px 100px;
 }
 
-#form #links .links .icon {
+#form #bottom .icons {
   position: relative;
   width: 185px;
   display: -webkit-box;
@@ -1496,12 +1516,12 @@ body {
   padding: 0;
 }
 
-#form #links .links .icon a {
+#form #bottom .icons a {
   text-decoration: none;
   color: black;
 }
 
-#form #links .links .icon a:hover {
+#form #bottom .icons a:hover {
   position: relative;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -1512,13 +1532,13 @@ body {
 }
 
 @media screen and (max-width: 1145px) {
-  #form #links .links {
+  #form #bottom .links {
     margin-left: -220px;
   }
 }
 
 @media screen and (max-width: 1145px) and (max-width: 573px) {
-  #form #links .links .copyrighttext {
+  #form #bottom .copyrighttext {
     display: none;
   }
 }
